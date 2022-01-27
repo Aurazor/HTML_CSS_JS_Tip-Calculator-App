@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="images/logo.svg" alt="">
+  </div>
+
+  <div class="container">
+
+    <div class="container-left">
+      <div class="input-group group-bill">
+        <label class="grey-text" for="bill">Bill</label>
+        <img id="icon-dollar" src="images/icon-dollar.svg" alt="">
+        <input type="number" class="num-inputs" id="bill" name="bill">
+      </div>
+
+      <div class="group-tip">
+        <span class="grey-text">Select Tip %</span>
+        <div class="tip-boxes">
+          <div class="tip-box">5%</div>
+          <div class="tip-box">10%</div>
+          <div class="tip-box">15%</div>
+        </div>
+        <div class="tip-boxes">
+          <div class="tip-box">25%</div>
+          <div class="tip-box">50%</div>
+          <input class="tip-box-input" type="number" placeholder="Custom">
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="group-text">
+          <span class="grey-text">Number Of People</span>
+          <span id="group-text__validation">Can't be zero</span>
+        </div>
+        <img src="images/icon-person.svg" alt="">
+        <input type="number" value="0" class="num-inputs" id="numPeople" name="numPeople">
+      </div>
+
+    </div>
+
+    <div class="container-right">
+      <div class="tip-amount">
+        <div class="tip-amount-group">
+          <span class="tip-amount-text">Tip Amount</span> <br>
+          <span class="tip-amount-person">/ person</span>
+        </div>
+        <div class="tip-amount-cost">
+          $0.00
+        </div>
+      </div>
+
+      <div class="tip-amount">
+        <div class="tip-amount-group">
+          <span class="tip-amount-text">Total</span> <br>
+          <span class="tip-amount-person">/ person</span>
+        </div>
+        <div class="tip-amount-cost">
+          $0.00
+        </div>
+      </div>
+      <div class="reset-btn">
+        <button class="btn">Reset</button>
+      </div>
+
+    </div>
+
+
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://nikhilaukhaj.com">Nikhil Aukhaj</a>.
+  </div>
+</body>
+
+</html>
