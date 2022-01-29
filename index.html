@@ -48,7 +48,7 @@
         <div class="tip-boxes">
           <div class="tip-box">25%</div>
           <div class="tip-box">50%</div>
-          <input class="tip-box-input" type="number" placeholder="Custom">
+          <input class="tip-box-input" id="input-percent" type="number" placeholder="Custom">
         </div>
       </div>
 
@@ -69,7 +69,7 @@
           <span class="tip-amount-text">Tip Amount</span> <br>
           <span class="tip-amount-person">/ person</span>
         </div>
-        <div class="tip-amount-cost">
+        <div id="tip-amount-perPerson" class="tip-amount-cost">
           $0.00
         </div>
       </div>
@@ -79,12 +79,12 @@
           <span class="tip-amount-text">Total</span> <br>
           <span class="tip-amount-person">/ person</span>
         </div>
-        <div class="tip-amount-cost">
+        <div id="tip-amount-total" class="tip-amount-cost">
           $0.00
         </div>
       </div>
       <div class="reset-btn">
-        <button class="btn">Reset</button>
+        <button id="btn-reset" class="btn">Reset</button>
       </div>
 
     </div>
@@ -96,6 +96,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://nikhilaukhaj.com">Nikhil Aukhaj</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

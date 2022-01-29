@@ -21,6 +21,18 @@ body {
   background-color: var(--LightGrayishCyan1);
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .logo {
   margin-top: 80px;
   display: flex;
@@ -88,9 +100,18 @@ body {
   align-items: center;
 }
 
-.tip-box:hover {
+/* .tip-box:hover {
   background-color: var(--strongCyan);
   color: var(--veryDarkCyan);
+} */
+
+.tip-box-active {
+  background-color: var(--strongCyan);
+  color: var(--veryDarkCyan);
+}
+
+.tip-box-input-active {
+  outline: 2px solid var(--strongCyan);
 }
 
 .tip-box-input,
@@ -103,7 +124,6 @@ body {
   text-align: right;
   transition: 0.2 ease;
 }
-
 .tip-box-input:focus-visible,
 .num-inputs:focus-visible {
   outline: 2px solid var(--strongCyan);
